@@ -5,7 +5,7 @@ const Navbar = () => {
     <header className="border-b bg-white">
       <nav className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
         <Link to="/" className="text-xl font-bold text-indigo-600">
-          MyProject
+          MeuProjeto
         </Link>
 
         <div className="flex gap-6">
@@ -17,7 +17,7 @@ const Navbar = () => {
                 : "text-slate-600 hover:text-slate-900"
             }
           >
-            Home
+            Início
           </NavLink>
           <NavLink
             to="/about"
@@ -27,7 +27,7 @@ const Navbar = () => {
                 : "text-slate-600 hover:text-slate-900"
             }
           >
-            About
+            Sobre
           </NavLink>
           <NavLink
             to="/pricing"
@@ -37,17 +37,7 @@ const Navbar = () => {
                 : "text-slate-600 hover:text-slate-900"
             }
           >
-            Pricing
-          </NavLink>
-          <NavLink
-            to="/landing"
-            className={({ isActive }) =>
-              isActive
-                ? "text-indigo-600 font-medium"
-                : "text-slate-600 hover:text-slate-900"
-            }
-          >
-            Landing
+            Preços
           </NavLink>
         </div>
       </nav>

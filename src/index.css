@@ -4,3 +4,6 @@
 @theme {
   --color-primary: #6366f1;
 }
+body {
+  @apply font-sans;
+}
