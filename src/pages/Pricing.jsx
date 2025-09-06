@@ -1,5 +1,6 @@
 import { Check } from "lucide-react";
 import { motion } from "framer-motion";
+import Section from "../components/Section";
 
 const plans = [
   {
@@ -37,11 +38,11 @@ const cardVariants = {
 
 const Pricing = () => {
   return (
-    <section className="px-6 py-12 text-center">
-      <h2 className="text-3xl font-bold">Preços</h2>
-      <p className="mt-4 text-slate-600 max-w-xl mx-auto">
-        Escolha um plano que funcione para você. (Página de demonstração 🚀)
-      </p>
+    <Section
+      title="Preços"
+      subtitle="Escolha um plano que funcione para você. (Página de demonstração 🚀)"
+      center
+    >
       <div className="mt-10 flex flex-col md:flex-row gap-6 justify-center items-stretch">
         {plans.map((plan, i) => (
           <motion.div
@@ -77,7 +78,7 @@ const Pricing = () => {
           </motion.div>
         ))}
       </div>
-    </section>
+    </Section>
   );
 };
 

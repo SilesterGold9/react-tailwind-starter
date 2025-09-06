@@ -5,7 +5,7 @@ const Navbar = () => {
     <header className="border-b bg-white">
       <nav className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
         <Link to="/" className="text-xl font-bold text-indigo-600">
-          MeuProjeto
+          Elementar
         </Link>
 
         <div className="flex gap-6">
