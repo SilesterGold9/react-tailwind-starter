@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <header className="border-b bg-white">
       <nav className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
-        <Link to="/" className="text-xl font-bold text-indigo-600">
+        <Link to="/" className="text-xl font-bold text-teal-600">
           Elementar
         </Link>
 
@@ -13,7 +13,7 @@ const Navbar = () => {
             to="/"
             className={({ isActive }) =>
               isActive
-                ? "text-indigo-600 font-medium"
+                ? "text-teal-600 font-medium"
                 : "text-slate-600 hover:text-slate-900"
             }
           >
@@ -23,7 +23,7 @@ const Navbar = () => {
             to="/about"
             className={({ isActive }) =>
               isActive
-                ? "text-indigo-600 font-medium"
+                ? "text-teal-600 font-medium"
                 : "text-slate-600 hover:text-slate-900"
             }
           >
@@ -33,7 +33,7 @@ const Navbar = () => {
             to="/pricing"
             className={({ isActive }) =>
               isActive
-                ? "text-indigo-600 font-medium"
+                ? "text-teal-600 font-medium"
                 : "text-slate-600 hover:text-slate-900"
             }
           >

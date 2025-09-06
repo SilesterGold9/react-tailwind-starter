@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar.jsx";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Pricing from "./pages/Pricing.jsx";
+import Footer from "./components/Footer.jsx";
 
 const App = () => {
   return (
@@ -17,9 +18,7 @@ const App = () => {
         </Routes>
       </main>
 
-      <footer className="p-4 text-center text-sm text-slate-500">
-        © {new Date().getFullYear()} Elementar. All rights reserved.
-      </footer>
+      <Footer />
     </div>
   );
 };

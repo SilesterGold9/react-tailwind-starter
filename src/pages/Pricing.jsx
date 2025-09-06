@@ -48,7 +48,7 @@ const Pricing = () => {
           <motion.div
             key={plan.name}
             className={`flex-1 bg-white rounded-xl shadow p-8 border ${
-              plan.highlight ? "border-blue-600 scale-105" : "border-slate-200"
+              plan.highlight ? "border-teal-600 scale-105" : "border-slate-200"
             } transition-transform`}
             custom={i}
             initial="hidden"
@@ -61,7 +61,7 @@ const Pricing = () => {
             <ul className="mb-6 text-slate-700 space-y-2 text-left">
               {plan.features.map((feature) => (
                 <li key={feature} className="flex items-center gap-2">
-                  <Check className="w-5 h-5 text-blue-600 flex-shrink-0" />
+                  <Check className="w-5 h-5 text-teal-600 flex-shrink-0" />
                   <span>{feature}</span>
                 </li>
               ))}
@@ -69,7 +69,7 @@ const Pricing = () => {
             <button
               className={`w-full py-2 rounded ${
                 plan.highlight
-                  ? "bg-blue-600 text-white"
+                  ? "bg-teal-600 text-white"
                   : "bg-slate-100 text-slate-800"
               } font-semibold`}
             >
